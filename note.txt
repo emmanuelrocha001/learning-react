@@ -1,0 +1,2 @@
+# declarative approach
+define desired state, react will figure out actual javascript DOM instructions
