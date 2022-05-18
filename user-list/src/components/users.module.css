@@ -1,0 +1,13 @@
+.container {
+ width: 100%;
+ height: 100%;
+ display: inline-block;
+ text-align: center;
+ padding-top: 30px;
+ 
+}
+
+.card {
+  display: inline-block;
+  color: rgb(160, 160, 160);
+}
