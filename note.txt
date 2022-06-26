@@ -1,2 +1,31 @@
 # declarative approach
 define desired state, react will figure out actual javascript DOM instructions
+
+# state management
+Do not derive a state's value from a different state, the value might be stale due to how react handles updates.
+
+
+# portals, refs, and fragments
+
+# reducer useEffect useContext
+
+# rules of hooks
+-> only call react hooks in react functions
+  -> react component functions & customer react hooks
+-> only call react hooks on top level function block
+
+
+-> always add everything that is refered inside of useEffect as a dependancy
+(unless intentional, such as [] to run only once )
+(not including setState functions)
+
+# forward refs
+Can user ref to use child functionality, which is imperitively exposed by the child, in parent component
+
+const test = React.fordwardRef((props, ref)=> { return <div></div});
+
+useImperativeHandle(ref, () => {
+    return {
+      focus: onFocus,
+    };
+  });
